@@ -1,0 +1,17 @@
+* LA SUCESIÓN DE FIBONACCI 
+ *
+ * Enunciado: Escribe un programa que imprima los 50 primeros números de la sucesión de Fibonacci empezando en 0.
+ * La serie Fibonacci se compone por una sucesión de números en la que el siguiente siempre es la suma de los dos anteriores.
+ * 0, 1, 1, 2, 3, 5, 8, 13...
+
+function fibonacci(num) {
+    const Fibo = [0, 1]; // Primeros numeros de la sucesion
+
+    for (let i = 2; i <= num; i++) { // Iterando desde la segunda posición
+        Fibo[i] = Fibo[i - 1] + Fibo[i - 2];
+    }
+
+    return Fibo;
+}
+ const Imprimir = fibonacci(49)
+ console.log(Imprimir)
